@@ -1,16 +1,79 @@
+
+body {
+    /* color: white; */
+    color: #5cdb95;
+    background-color: #05386b;
+
+}
+
+
 .nav-bar {
     display: flex;
-    position: relative;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* background-color: #05386b; */
+    /* background-color: red; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-
-
-
-
-
-
-.contact-form {
+#profile-nav {
     display: flex;
-
+    justify-content: center;
 }
+
+#profile-nav img {
+    width: 500%;
+    height: 100%;
+    padding-left: 75px; 
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+
+nav ul li {
+    padding: 0 25px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: large;
+}
+
+
+.contact-form input {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+
+.intro-container {
+    height: 75%;
+    display: flex;
+    justify-content: start;
+}
+
+.intro {
+    padding-top: 75px;
+    padding-left: 75px;
+    height: 25%;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    font: bold;
+    padding-bottom: 25px;
+}
+
+.my-name {
+    font-family: 'Chakra Petch', sans-serif;
+
+    font-size: 400%;
+}
+
