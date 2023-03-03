@@ -3,18 +3,22 @@ body {
     /* color: white; */
     color: #5cdb95;
     background-color: #05386b;
-
+    font-family: 'Chakra Petch', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation */
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    /* background-color: #05386b; */
-    /* background-color: red; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
 }
 
 #profile-nav {
@@ -52,10 +56,11 @@ nav ul li {
     font-size: 1.2rem;
 }
 
+/* Introduction */
 
 .intro-container {
-    height: 75%;
-    display: flex;
+    height: 100%;
+    display: flex-row;
     justify-content: start;
 }
 
@@ -63,6 +68,7 @@ nav ul li {
     padding-top: 75px;
     padding-left: 75px;
     height: 25%;
+    width: 100%;
 }
 
 .intro p {
@@ -71,9 +77,69 @@ nav ul li {
     padding-bottom: 25px;
 }
 
-.my-name {
+.big-intro {
     font-family: 'Chakra Petch', sans-serif;
+    font-size: 200%;
+}
 
+.position { 
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 400%;
 }
 
+.end-intro {
+    padding-top: 50px;
+    padding-right: 200px;
+    flex-wrap: wrap;
+}
+
+
+/* About section */
+
+
+.about-container {
+    height: 100%;
+    display: flex-row; 
+    justify-content: start;
+    width: 100%;
+}
+
+.about-me-intro {
+    padding-left: 75px;
+    padding-right: 200px;
+    flex-wrap: wrap;
+}
+
+.about-me-intro h1 {
+    padding-bottom: 25px;
+
+}
+
+
+.about-me-header {
+    padding-left: 25px;
+}
+
+h1.about-me-header::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid lightgrey;
+    width: 200px;
+    height: 10px;
+    margin-left: 20px;
+    /* background-color: var(--lightest-navy); */
+}
+
+
+/* Projects section */
+
+.projects-container {
+    height: 25%;
+}
+
+
+/* Contact section */
+
+.contact-container {
+    height: 25%;
+}
