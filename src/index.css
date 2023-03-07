@@ -99,15 +99,20 @@ nav ul li {
 
 .about-container {
     height: 100%;
-    display: flex-row; 
-    justify-content: start;
+    display: flex; 
     width: 100%;
+    flex-direction: row;
 }
 
+
+
+
 .about-me-intro {
+    padding-top: 50px;
     padding-left: 75px;
     padding-right: 200px;
     flex-wrap: wrap;
+    justify-content: start;
 }
 
 .about-me-intro h1 {
@@ -128,6 +133,15 @@ h1.about-me-header::after {
     height: 10px;
     margin-left: 20px;
     /* background-color: var(--lightest-navy); */
+}
+
+.profile-container {
+    justify-content: end;
+}
+
+.profile-pic img {
+    width: 20%;
+    height: 20%;
 }
 
 
