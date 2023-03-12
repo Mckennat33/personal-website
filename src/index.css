@@ -20,6 +20,10 @@ html {
     padding: 20px 0;
 }
 
+.mobile-nav-toggle {
+    display: none; 
+}
+
 @media (max-width: 55em) {
     .nav-links {
         /* position: fixed;  */
@@ -31,6 +35,20 @@ html {
 
     .nav-links li {
         padding: 15px;
+    }
+
+    .mobile-nav-toggle {
+        display: block; 
+        position: absolute; 
+        z-index: 9999;
+        background-color: red;
+        width: 5rem;
+        background-repeat: no-repeat;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        background: url("https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Fmenu-icons%2Fmenu-icon&psig=AOvVaw3ga1PQB_D3Iuudpso4WyuE&ust=1678737985124000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIDYzLuY1_0CFQAAAAAdAAAAABAE");
     }
 }
 
