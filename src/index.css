@@ -18,7 +18,20 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+}
 
+@media (max-width: 55em) {
+    .nav-links {
+        /* position: fixed;  */
+        inset: 0 0 0 30%;
+        flex-direction: column; 
+        padding-right: 50px;
+        background-color: #05386b;
+    }
+
+    .nav-links li {
+        padding: 15px;
+    }
 }
 
 #profile-nav {
@@ -60,7 +73,7 @@ nav ul li {
 .intro-container {
     height: 100%;
     display: flex-row;
-    justify-content: start;
+    justify-content: center;
 }
 
 .intro {
