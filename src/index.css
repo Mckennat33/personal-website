@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Navigation */
 
 .nav-bar {
@@ -26,7 +25,6 @@ html {
 
 @media (max-width: 55em) {
     .nav-links {
-        /* position: fixed;  */
         inset: 0 0 0 30%;
         flex-direction: column; 
         padding-right: 50px;
@@ -130,6 +128,7 @@ nav ul li {
     height: 100%;
     display: flex; 
     width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -139,6 +138,7 @@ nav ul li {
     padding-right: 200px;
     flex-wrap: wrap;
     justify-content: start;
+    width: 100%;
 }
 
 .about-me-intro h1 {
@@ -170,6 +170,7 @@ h1.about-me-header::after {
     padding-top: 50px;
     width: 40%;
     height: 40%;
+    word-wrap: wrap;
 }
 
 
