@@ -39,20 +39,41 @@ html {
     border-radius: 10px;
 }
 
-@media (max-width: 55em) {
+/* START OF MEDIA */
+@media (max-width: 65em) {
 
     .toggle-button {
         display: flex; 
     }
     
     .nav-bar-right {
-        /* display: none; */
+        display: none;
+        width: 100%;
     }
 
+    .nav-bar-right ul {
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .nav-bar-right li {
+        text-align: center;
+        padding: 15px;
+        font-size: small;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar-right.active {
+        display: flex;
+    }
 
 }
 
+/* END OF MEDIA */
 
 
 
