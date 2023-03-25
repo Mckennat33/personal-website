@@ -17,6 +17,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .toggle-button {
@@ -42,13 +43,20 @@ html {
 /* START OF MEDIA */
 @media (max-width: 65em) {
 
-    .toggle-button {
-        display: flex; 
+
+    .nav-bar {
+        flex-wrap: wrap;
     }
-    
+
+    .toggle-button {
+        display: flex;
+        padding-top: 80px;
+    }
+
     .nav-bar-right {
         display: none;
         width: 100%;
+        
     }
 
     .nav-bar-right ul {
@@ -60,17 +68,22 @@ html {
         text-align: center;
         padding: 15px;
         font-size: small;
+
     }
 
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
     }
+    
+    .nav-links {
+        position: absolute;
+    }
 
     .active {
         display: flex;
+        padding-left: 325px;
     }
-
 }
 
 /* END OF MEDIA */
