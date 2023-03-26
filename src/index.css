@@ -1,9 +1,16 @@
 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     /* color: white; */
     color: #5cdb95;
     background-color: #05386b;
     font-family: 'Chakra Petch', sans-serif;
+    padding: 30px;
 }
 
 html {
@@ -48,6 +55,7 @@ html {
         flex-wrap: wrap;
     }
 
+
     .toggle-button {
         display: flex;
         padding-top: 80px;
@@ -82,8 +90,13 @@ html {
 
     .active {
         display: flex;
-        padding-left: 325px;
+        padding-left: 200px;
     }
+
+    .cancel-button {
+        background-color: red;
+    }
+
 }
 
 /* END OF MEDIA */
