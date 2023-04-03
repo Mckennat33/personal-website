@@ -1,0 +1,39 @@
+.about-container {
+    height: 100%;
+    display: flex; 
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about-me-intro {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 200px;
+    /* flex-wrap: wrap; */
+    justify-content: start;
+    width: 100%;
+}
+
+.about-me-intro h1 {
+    padding-bottom: 25px;
+
+}
+
+.about-me-header {
+    padding-left: 25px;
+}
+
+h1.about-me-header::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid lightgrey;
+    width: 200px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+.profile-pic img {
+    padding-top: 50px;
+    width: 20%;
+    height: 20%;
+} 

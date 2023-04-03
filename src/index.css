@@ -58,7 +58,7 @@ html {
 
     .toggle-button {
         display: flex;
-        padding-top: 80px;
+        
     }
 
     .nav-bar-right {
@@ -86,7 +86,7 @@ html {
     
     .nav-links {
         position: absolute;
-    }
+    } 
 
     .active {
         display: flex;
@@ -177,54 +177,25 @@ nav ul li {
 /* About section */
 /*  ///////////////////////////////////////////////////// */
 
+
 .about-container {
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    display: flex; 
-    width: 100%;
-    flex-wrap: wrap;
 }
 
-
-.about-me-intro {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 200px;
-    flex-wrap: wrap;
-    justify-content: start;
-    width: 100%;
-}
-
-.about-me-intro h1 {
-    padding-bottom: 25px;
-
-}
-
-
-.about-me-header {
-    padding-left: 25px;
-}
-
-h1.about-me-header::after {
-    display: inline-block;
-    content: "";
-    border-top: .1rem solid lightgrey;
-    width: 200px;
-    height: 10px;
-    margin-left: 20px;
-    /* background-color: var(--lightest-navy); */
-}
-
-/* .profile-container {
-    justify-content: end;
+.profile-container {
+    display: flex;
+    justify-content: center;
     
-} */
+}
 
 .profile-pic img {
-    padding-top: 50px;
-    width: 40%;
-    height: 40%;
-    word-wrap: wrap;
+    width: 125%;
+    height: 50%;
+    flex-wrap: wrap;
 }
+
 
 
 /* ////////////////////////////////////////////////// */
