@@ -27,6 +27,11 @@ html {
     flex-wrap: wrap;
 }
 
+.nav-bar-right {
+    /* padding-right: 125px; */
+    padding: 25px 125px 25px 25px; 
+}
+
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -49,7 +54,6 @@ html {
 
 /* START OF MEDIA */
 @media (max-width: 65em) {
-
 
     .nav-bar {
         flex-wrap: wrap;
