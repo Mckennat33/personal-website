@@ -52,13 +52,23 @@ html {
     border-radius: 10px;
 }
 
+.mobile-nav-container {
+    display: none;
+}
+
 /* START OF MEDIA */
-@media (max-width: 65em) {
+@media (max-width: 80em) {
 
     .nav-bar {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
+    .mobile-nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: red;
+    }
 
     .toggle-button {
         display: flex;
@@ -68,6 +78,7 @@ html {
     .nav-bar-right {
         display: none;
         width: 100%;
+        position: absolute; 
         
     }
 
