@@ -116,7 +116,6 @@ html {
 
 /* END OF MEDIA */
 
-
 #profile-nav {
     display: flex;
     justify-content: center;
@@ -197,12 +196,19 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    border: 5px red solid;
+}
+
+.about-me-intro {
+    border: 5px solid blue;
+    flex: 2;
 }
 
 .profile-container {
     display: flex;
     justify-content: center;
-    
+    border: 5px solid green;
+    flex: 1;
 }
 
 .profile-pic img {
