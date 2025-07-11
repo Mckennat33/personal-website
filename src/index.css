@@ -62,12 +62,12 @@ html {
     .nav-bar {
         flex-wrap: wrap;
         justify-content: center;
-    }
+    }           
 
     .mobile-nav-container {
         display: flex;
         justify-content: center;
-        background-color: red;
+        background-color: blue;
     }
 
     .toggle-button {
