@@ -461,6 +461,12 @@ body {
     }
 }
 
+.revealed {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+
 .scroll-reveal {
     opacity: 0;
     transform: translateY(50px);
