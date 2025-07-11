@@ -1,33 +1,20 @@
-<!doctype html>
+
+ <!--
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas McKenna - Front End Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&family=Chakra+Petch:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="finalprofile.png">
-<script defer src="main.js"></script>
-
-    <title>Thomas McKenna</title>
 </head>
 
-<header>
-
-    <!--  IN MEDIA CSS -->
+<body>
+    
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="#home" class="logo">TM</a>
@@ -44,27 +31,190 @@
         </div>
     </nav>
 
-    <!-- END OF MEDIA CSS -->
+    
+    <main class="main-content">
+       
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name">Thomas McKenna.</h1>
+                <h2 class="hero-title">Front End Web Developer</h2>
+                <p class="hero-description">
+                    I'm a software engineer specializing in building exceptional digital experiences. 
+                    Currently focused on creating accessible, human-centered products that make a difference.
+                </p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
 
-</header>
+        <h2>hello there</h2>
 
-<main class="main-content">
-    <!-- Hero Section -->
+        <section id="about" class="section about scroll-reveal">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Thomas and I enjoy creating things that live on the internet. 
+                    My interest in web development started back in 2012 when I decided to try editing 
+                    custom Tumblr themes — turns out hacking together a custom reblog button taught me 
+                    a lot about HTML & CSS!
+                </p>
+                <p>
+                    Fast-forward to today, and I've had the privilege of working at an advertising agency, 
+                    a start-up, a huge corporation, and a student-led design studio. My main focus these 
+                    days is building accessible, inclusive products and digital experiences.
+                </p>
+                <p>
+                    I also recently launched a course that covers everything you need to build a web app 
+                    with the Spotify API using Node & React.
+                </p>
+                <p>Here are a few technologies I've been working with recently:</p>
+                <ul class="tech-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Mongoose</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="profile-placeholder">
+                    Profile Image
+                </div>
+            </div>
+        </section>
+
+            <!--
+      
+        <section id="projects" class="section projects scroll-reveal">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Spotify Web App</h3>
+                    <p>
+                        A full-stack web application built with Node.js and React that integrates with 
+                        the Spotify API to create personalized music experiences.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Spotify API</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">View Code</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A responsive portfolio website showcasing my work and skills, built with modern 
+                        web technologies and focusing on performance and accessibility.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">View Code</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>
+                        A modern e-commerce solution with React frontend and Node.js backend, 
+                        featuring user authentication, payment processing, and admin dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="section contact scroll-reveal">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <script defer src="main.js"></script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas McKenna - Front End Developer</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&family=Chakra+Petch:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="nav-content">
+      <a href="#home" class="logo">TM</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
     <section id="home" class="section hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, my name is</p>
-            <h1 class="hero-name">Thomas McKenna.</h1>
-            <h2 class="hero-title">Front End Web Developer</h2>
-            <p class="hero-description">
-                I'm a software engineer specializing in building exceptional digital experiences. 
-                Currently focused on creating accessible, human-centered products that make a difference.
-            </p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
-        </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-name">Thomas McKenna.</h1>
+        <h2 class="hero-title">Front End Web Developer</h2>
+        <p class="hero-description">
+          I'm a software engineer specializing in building exceptional digital experiences.
+        </p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about scroll-reveal">
+     <section id="about" class="section about scroll-reveal">
+     <!-- class="section about scroll-reveal">  -->
         <div class="about-content">
             <h2>About Me</h2>
             <p>
@@ -102,86 +252,10 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects scroll-reveal">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Spotify Web App</h3>
-                <p>
-                    A full-stack web application built with Node.js and React that integrates with 
-                    the Spotify API to create personalized music experiences.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Spotify API</span>
-                    <span class="tech-tag">Express</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">View Code</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>
-                    A responsive portfolio website showcasing my work and skills, built with modern 
-                    web technologies and focusing on performance and accessibility.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Responsive Design</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">View Code</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>E-commerce Platform</h3>
-                <p>
-                    A modern e-commerce solution with React frontend and Node.js backend, 
-                    featuring user authentication, payment processing, and admin dashboard.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Stripe API</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">View Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact scroll-reveal">
-        <h2>Get In Touch</h2>
-        <form class="contact-form" action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
-</main>
+  </main>
 
-<script src="main.js"></script>
+  <!-- Optional JS -->
+  <script defer src="main.js"></script>
+</body>
 </html>
