@@ -57,6 +57,9 @@ html {
 }
 
 /* START OF MEDIA */
+/* Restarting Media CSS */
+
+
 @media (max-width: 80em) {
 
     .nav-bar {
@@ -79,7 +82,7 @@ html {
         display: none;
         width: 100%;
         position: absolute; 
-        
+        justify-content: flex-end;
     }
 
     .nav-bar-right ul {
@@ -101,16 +104,17 @@ html {
     
     .nav-links {
         position: absolute;
+        max-width: 350px;
     } 
+
+
 
     .active {
         display: flex;
         padding-left: 200px;
     }
 
-    .cancel-button {
-        background-color: red;
-    }
+
 
 }
 
