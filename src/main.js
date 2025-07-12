@@ -27,3 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Trigger on page load
     handleScrollAnimation();
   });
+
+
