@@ -7,10 +7,18 @@ app.use(express.static(path.join(__dirname, '../src')))
 
 app.get('/', (req, res) => {
     try {
-        res.sendFile(path.join(__dirname, '../src/index.html'))
+        res.sendFile(path.join(__dirname, '../src/index.html'));
         // res.send('Hello from Thomas')
     } catch (err) {
         console.log(err)
+    }
+})
+
+app.get('/projects', async (req, res) => {
+    try {
+        await res.sendFile()
+    } catch( err ) {
+        console.log( err )
     }
 })
 
