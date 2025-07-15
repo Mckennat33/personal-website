@@ -4,6 +4,7 @@ const PORT = 3000;
 const path = require('path')
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../src')))
+const contactRoute = require('../routes/contact.routes.js')
 
 app.get('/', (req, res) => {
     try {
@@ -13,6 +14,8 @@ app.get('/', (req, res) => {
         console.log(err)
     }
 })
+
+app.post('/contact', contactRoute)
 
 app.get('/projects', async (req, res) => {
     try {
