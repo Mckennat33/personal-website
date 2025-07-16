@@ -3,28 +3,33 @@ document.addEventListener('DOMContentLoaded', () => {
     submitMessage.addEventListener('click', contactMe)
 
 })
-
-const name = document.querySelector("#name")
-const email = document.querySelector("#email")
-const message = document.querySelector("#message")
+    
+    const contactName = document.querySelector(".name")
+    const email = document.querySelector("#email")
+    const message = document.querySelector("#message")
 
 const contactMe = async (event) => {
-        const postEmailUrl = "http://localhost:3000/contact"
-        event.preventDefault()
-        const nameValue = name.value  
-        const emailValue = email.value  
-        const messageValue = message.value
-        console.log(nameValue, emailValue, messageValue)
-            // const response = await fetch(postEmailUrl, {
-            //     method: "POST", 
-            //     body: JSON.stringify({
-            //         name: nameValue, 
-            //         email: emailValue, 
-            //         message: messageValue
-            //     })
-            // })
-    }
-    contactMe()
+    event.preventDefault()
+    const postEmailUrl = "http://localhost:3000/contact"
+    const nameValue = contactName.value  
+    const emailValue = email.value  
+    const messageValue = message.value
+    console.log(nameValue, emailValue, messageValue)
+            const response = await fetch(postEmailUrl, {
+                method: "POST", 
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: nameValue, 
+                    email: emailValue, 
+                    message: messageValue
+                })
+            })
+            const result = await response.json()
+            console.log(result)
+        }
+        
     
     
 
