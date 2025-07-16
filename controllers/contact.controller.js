@@ -22,20 +22,25 @@ const contact = async (req, res) => {
           });
 
           (async () => {
-            const info = await transporter.sendMail({
-              from: `${email}`,
+            try {
+
+                const info = await transporter.sendMail({
+                    from: `${email}`,
               to: "thomasmckenna12@gmail.com",
               subject: `${name} is reaching out to you from your Website`,
-            //   text: `${message}`, // plain‑text body
+              //   text: `${message}`, // plain‑text body
               html: `<b>${message}</b>`, // HTML body
             });
-          
+            
             // console.log("Message sent:", info.messageId);
             console.log("Message sent:", info.messageId);
-
+            
+        } catch (err) {
+            console.error('Error while sending mail', err)
+        }
           })();
 
-          console.log(transporter)
+        //   console.log(transporter)
 
      } catch (err) {
         console.log(err)  
