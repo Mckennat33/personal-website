@@ -16,6 +16,9 @@ const contact = async (req, res) => {
                 user: 'thomasmckenna12@gmail.com ',
                 pass: 'abcj zpwy bcwo ibvu',
             },
+            tls: {
+                rejectUnauthorized: false,
+              },
           });
 
           (async () => {
@@ -27,9 +30,12 @@ const contact = async (req, res) => {
               html: `<b>${message}</b>`, // HTML body
             });
           
+            // console.log("Message sent:", info.messageId);
             console.log("Message sent:", info.messageId);
+
           })();
 
+          console.log(transporter)
 
      } catch (err) {
         console.log(err)  
