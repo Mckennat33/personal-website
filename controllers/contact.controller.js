@@ -7,11 +7,30 @@ const contact = async (req, res) => {
     try { 
         const {name, email, message } = req.body
         console.log( name, email, message )
-        
-        // need to email myself
-        // retrieve email from front end contact
-        // name, email, message
-        // take the email from contact form 
+
+        const transporter = nodemailer.createTransport({
+            host: "smtp.ethereal.email",
+            port: 587,
+            secure: false, // true for 465, false for other ports
+            auth: {
+                user: 'thomasmckenna12@gmail.com ',
+                pass: 'abcj zpwy bcwo ibvu',
+            },
+          });
+
+          (async () => {
+            const info = await transporter.sendMail({
+              from: `${email}`,
+              to: "thomasmckenna12@gmail.com",
+              subject: `${name} is reaching out to you from your Website`,
+            //   text: `${message}`, // plain‑text body
+              html: `<b>${message}</b>`, // HTML body
+            });
+          
+            console.log("Message sent:", info.messageId);
+          })();
+
+
      } catch (err) {
         console.log(err)  
     }
