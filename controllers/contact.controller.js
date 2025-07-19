@@ -9,12 +9,13 @@ const contact = async (req, res) => {
         console.log( name, email, message )
 
         const transporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
+            // host: "smtp.ethereal.email",
+            host: "smtp.gmail.com",
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
                 user: 'thomasmckenna12@gmail.com ',
-                pass: 'abcj zpwy bcwo ibvu',
+                pass: 'itho ueqx ciyg wffm',
             },
             tls: {
                 rejectUnauthorized: false,
@@ -24,12 +25,13 @@ const contact = async (req, res) => {
           (async () => {
             try {
 
-                const info = await transporter.sendMail({
-                    from: `${email}`,
-              to: "thomasmckenna12@gmail.com",
-              subject: `${name} is reaching out to you from your Website`,
-              //   text: `${message}`, // plain‑text body
-              html: `<b>${message}</b>`, // HTML body
+            const info = await transporter.sendMail({
+                from: `${email}`,
+                // from: `thomasmckenna12@gmail.com`,
+                to: "thomasmckenna12@gmail.com",
+                subject: `${name} is reaching out to you from your Website`,
+                  //   text: `${message}`, // plain‑text body
+                html: `<b>${message}</b>`, // HTML body
             });
             
             // console.log("Message sent:", info.messageId);
