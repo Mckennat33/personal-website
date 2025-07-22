@@ -9,7 +9,6 @@ const contactRoute = require('../routes/contact.routes.js')
 app.get('/', (req, res) => {
     try {
         res.sendFile(path.join(__dirname, '../src/index.html'));
-        // res.send('Hello from Thomas')
     } catch (err) {
         console.log(err)
     }
